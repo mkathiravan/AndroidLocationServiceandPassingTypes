@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.kathir.myapplication">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ResultReceiverActivity"/>
+
+        <activity android:name=".BindServiceCommunActivity"/>
+
+        <activity android:name=".StartBindServiceActivity"/>
+
+        <activity android:name=".StartServiceActivity"/>
+
+        <activity android:name=".AIDLServiceActivity"/>
+
+        <service android:name=".LocationRequestService"/>
+
+        <service android:name=".LocationBindService"/>
+
+        <service android:name=".LocalBindEventComm"/>
+
+        <service android:name=".ResultReceiverService"/>
+
+        <service android:name=".AIDLSerivce"/>
+
+
+
+        <provider
+            android:name="net.kathir.myapplication.LocationEntryContentProvider"
+            android:authorities="net.kathir.myapplication.locationentrycontentprovider"
+            android:exported="false" />
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="location.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="23" />
+
+
+    </application>
+
+</manifest>

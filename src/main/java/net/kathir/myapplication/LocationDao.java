@@ -1,0 +1,21 @@
+package net.kathir.myapplication;
+
+import android.arch.persistence.room.Dao;
+import android.arch.persistence.room.Insert;
+import android.arch.persistence.room.Query;
+
+import java.util.List;
+
+@Dao
+public interface LocationDao {
+
+    @Query("SELECT * FROM locationtable")
+    List<LocationTable> getAll();
+
+
+    @Insert
+    void insert(LocationTable... locations);
+
+
+
+}

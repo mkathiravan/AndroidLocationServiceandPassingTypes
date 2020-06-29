@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AndroidLocationBackgroundService.iml" filepath="$PROJECT_DIR$/../AndroidLocationBackgroundService.iml" group="AndroidLocationBackgroundService" />
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" group="AndroidLocationBackgroundService/app" />
+    </modules>
+  </component>
+</project>
